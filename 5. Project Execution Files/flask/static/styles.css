@@ -1,0 +1,224 @@
+/* General styles for all pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('/static/curated.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+.inspect-btn {
+    padding: 10px 20px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inspect-btn:hover {
+    background-color: orange;
+}
+
+/* Hero section styles */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* About Page Styles */
+body {
+    background: url('/static/colond.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0; /* Removes any default margin from the body */
+    height: 100vh;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.about-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+/* Contact Page Styles */
+body {
+    background: url('/static/curated.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0; /* Removes any default margin from the body */
+    height: 100vh;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.contact-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-details div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-details span {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #ffa500;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e69500;
+}
+/* Inspect Page Styles */
+.inspect-container {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.inspect-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.inspect-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#file-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e69500;
+}
+
+#prediction-result {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#disease-name {
+    font-size: 1.5rem;
+    color: #ffa500;
+}
+
+#disease-image {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
