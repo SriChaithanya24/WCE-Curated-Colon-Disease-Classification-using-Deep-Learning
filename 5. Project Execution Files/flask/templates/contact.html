@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./static/colond.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white; /* Set background to white */
+            color: black; /* Default text color is black */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Space out the title and links */
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark navbar */
+            position: sticky;
+            top: 0;
+            z-index: 1; /* Ensure navbar is always on top */
+        }
+
+        .navbar .title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white; /* Navbar text is white */
+        }
+
+        .navbar a {
+            color: white; /* Link color is white */
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: yellow; /* Highlight links on hover */
+        }
+
+        .contact-container {
+            margin-top: 80px; /* Add space below navbar */
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 20px;
+            flex: 1; /* Ensure it takes up remaining vertical space */
+        }
+
+        .contact-left, .contact-right {
+            width: 48%; /* Both sections take up 48% of the container width */
+        }
+
+        .contact-left {
+            text-align: left;
+        }
+
+        .contact-right {
+            text-align: right;
+        }
+
+        .contact-details div {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-details div span {
+            margin-right: 10px;
+            font-size: 20px;
+            color: #ffa500;
+        }
+
+        .contact-details div p {
+            margin: 0;
+            color: #555;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #ffa500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e69500;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .title {
+                font-size: 1.4rem;
+            }
+
+            .contact-left, .contact-right {
+                width: 100%; /* Stack them on smaller screens */
+                text-align: center;
+            }
+
+            .contact-container {
+                flex-direction: column; /* Stack sections vertically on smaller screens */
+            }
+
+            .contact-form input, .contact-form textarea {
+                font-size: 1rem; /* Adjust input font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="title">COLON DISEASE.</div>
+        <div>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <button onclick="location.href='/inspect'">Inspect</button>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+
+        <!-- Left Section: Contact Details -->
+        <div class="contact-left contact-details">
+            <h2>Contact Information</h2>
+            <div>
+                <span>📍</span>
+                <p><strong>Location:</strong> Survey no. 91, Sundarayya Vignana Kendram, Technical Block, 6th floor, Madhava Reddy Colony, Gachibowli, Hyderabad, Telangana 500032</p>
+            </div>
+            <div>
+                <span>📧</span>
+                <p><strong>Email:</strong> info@thesmartbridge.com</p>
+            </div>
+            <div>
+                <span>📞</span>
+                <p><strong>Call:</strong> +91 6304320044</p>
+            </div>
+        </div>
+
+        <!-- Right Section: Contact Form -->
+        <div class="contact-right">
+            <h2>Get in Touch</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        
+    </div>
+
+</body>
+</html>
